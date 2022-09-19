@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -302,39 +302,42 @@
 
         <label for="name">Adresse Email :</label>
 
-        <input type="text" required minlength="4" maxlength="35" size="35">
+        <input type="email" required minlength="4" maxlength="50" size="50">
         <br><br>
-        <legend>VOTRE ADRESSE</legend>
+      </fieldset>
+        <fieldset>
+        <legend> VOTRE ADRESSE </legend>
+       
         <br>
 
-        <select name="rue">
+            <select name="rue">
             <option value="RUE" selected="selected">RUE </option>
 
             <option value="AVENUE">AVENUE </option>
             <option value="BOULEVARD">BOULEVARD </option>
             <option value="ROUTE">ROUTE </option>
+            </select>
+            <label for="name">Adresse:</label>
 
-            <label for="name">Adresse :</label>
-
-            <input type="text" id="name" name="name" required minlength="4" maxlength="50" size="50">
+            <input type="text" id="adresse" name="adresse" required minlength="4" maxlength="50" size="50">
 
             <br>
             <br>
             <label for="name">CP :</label>
 
-            <input type="text" id="name" name="name" required minlength="4" maxlength="5" size="5">
+            <input type="text" id="cp" name="cp" required minlength="4" maxlength="5" size="5">
 
 
             <label for="name">Ville :</label>
 
-            <input type="text" id="name" name="name" required minlength="4" maxlength="30" size="30">
+            <input type="text" id="ville" name="ville" required minlength="4" maxlength="30" size="30">
 
     </fieldset>
     <br>
     <fieldset>
         <label for="name">Metier exercé :</label>
 
-        <input type="text" id="name" name="name" required minlength="4" maxlength="35" size="35">
+        <input type="text" id="numsec" name="numsec" required minlength="4" maxlength="35" size="35">
         <br><br>
         <label for="name">Numéro de Sécurité sociale :</label>
 
@@ -344,7 +347,6 @@
 
     </fieldset>
     <br>
-    </fieldset>
     <br>
     <fieldset>
 
@@ -357,18 +359,21 @@
         <label for="start">Date de délivrance du passeport:</label>
 
 
-        <input type="date" id="start" name="trip-start" value="2018-07-22" min="1960-01-01" max="2034-12-31">
+        <input type="date" id="delipass" name="trip-start" value="2018-07-22" min="1960-01-01" max="2034-12-31">
 
 
         <label for="start">Date de validité du passeport:</label>
 
 
-        <input type="date" id="start" name="trip-start" value="2018-07-22" min="1960-01-01" max="2034-12-31">
+        <input type="date" id="valpass" name="trip-start" value="2018-07-22" min="1960-01-01" max="2034-12-31">
 
         <br><br>
 
     </fieldset>
+<br>
 
-    <input type="submit" value="Envoyer le formulaire" </body>
+    <input type="submit" value="Envoyer le formulaire">
+
+</body>
 
 </html>
