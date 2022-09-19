@@ -304,33 +304,33 @@
 
         <input type="email" required minlength="4" maxlength="50" size="50">
         <br><br>
-      </fieldset>
-        <fieldset>
+    </fieldset>
+    <fieldset>
         <legend> VOTRE ADRESSE </legend>
-       
+
         <br>
 
-            <select name="rue">
+        <select name="rue">
             <option value="RUE" selected="selected">RUE </option>
 
             <option value="AVENUE">AVENUE </option>
             <option value="BOULEVARD">BOULEVARD </option>
             <option value="ROUTE">ROUTE </option>
-            </select>
-            <label for="name">Adresse:</label>
+        </select>
+        <label for="name">Adresse:</label>
 
-            <input type="text" id="adresse" name="adresse" required minlength="4" maxlength="50" size="50">
+        <input type="text" id="adresse" name="adresse" required minlength="4" maxlength="50" size="50">
 
-            <br>
-            <br>
-            <label for="name">CP :</label>
+        <br>
+        <br>
+        <label for="name">CP :</label>
 
-            <input type="text" id="cp" name="cp" required minlength="4" maxlength="5" size="5">
+        <input type="text" id="cp" name="cp" required minlength="4" maxlength="5" size="5" pattern="/[0-9]{5}/g"> 
 
 
-            <label for="name">Ville :</label>
+        <label for="name">Ville :</label>
 
-            <input type="text" id="ville" name="ville" required minlength="4" maxlength="30" size="30">
+        <input type="text" id="ville" name="ville" required minlength="4" maxlength="30" size="30">
 
     </fieldset>
     <br>
@@ -370,7 +370,7 @@
         <br><br>
 
     </fieldset>
-<br>
+    <br>
 
     <input type="submit" value="Envoyer le formulaire">
 
